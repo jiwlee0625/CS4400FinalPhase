@@ -1,0 +1,131 @@
+<!-- Made by Vicky -->
+<!DOCTYPE html>
+<html lang = "en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title> City Official - POI Report </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        table, th, td {
+            border: 1px solid black
+        }
+        th, td {
+            padding: 15px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+    <h1 style="text-align:center;"> Pending Data Points </h1>
+    <form method="post" class="form-horizontal" role="form" action="../php/OfficialReport.php">
+
+        <div class="form-group">
+            <table style="width:100%">
+                <tr id="tr1">
+                    <th> POI Location </th>
+                    <th> City </th>
+                    <th> State </th>
+                    <th> Mold Min </th>
+                    <th> Mold Avg </th>
+                    <th> Mold Max </th>
+                    <th> AQ Min </th>
+                    <th> AQ Avg </th>
+                    <th> AQ Max </th>
+                    <th> # of Data Points </th>
+                    <th> Flagged? </th>
+                </tr>
+
+                <tr id="tr2">
+                    <th> Georgia Tech </th>
+                    <th> Atlanta </th>
+                    <th> GA </th>
+                    <th> 2 </th>
+                    <th> 43.1 </th>
+                    <th> 160 </th>
+                    <th> 3 </th>
+                    <th> 33.4 </th>
+                    <th> 84 </th>
+                    <th> 52 </th>
+                    <th> no </th>
+                </tr>
+
+                <tr id="tr3">
+                    <th> GSU </th>
+                    <th> Atlanta </th>
+                    <th> GA </th>
+                    <th> 12 </th>
+                    <th> 63.6 </th>
+                    <th> 140 </th>
+                    <th> 8 </th>
+                    <th> 52.8 </th>
+                    <th> 96 </th>
+                    <th> 47 </th>
+                    <th> yes </th>
+                </tr>
+
+                <tr id="tr4">
+                    <th> UChicago </th>
+                    <th> Chicago </th>
+                    <th> Illinois </th>
+                    <th> 32 </th>
+                    <th> 81.8 </th>
+                    <th> 104 </th>
+                    <th> 14 </th>
+                    <th> 42.6 </th>
+                    <th> 64 </th>
+                    <th> 78 </th>
+                    <th> yes </th>
+                </tr>
+
+                <tr id="tr5">
+                    <th> Emory </th>
+                    <th> Atlanta </th>
+                    <th> GA </th>
+                    <th> 3 </th>
+                    <th> 23.7 </th>
+                    <th> 46 </th>
+                    <th> 5 </th>
+                    <th> 45.2 </th>
+                    <th> 78 </th>
+                    <th> 27 </th>
+                    <th> no </th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="form-group">
+            <a href="OfficialFunctionality.php"> Back </a>
+            <!-- I'm assuming that it will go back to OfficialFunctionality.php page-->
+        </div><br>
+    </form>
+    </div>
+
+</body>
+</html>

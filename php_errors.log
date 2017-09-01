@@ -1,0 +1,13 @@
+[24-Apr-2017 00:25:02 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/pages/OfficialPOI3.php on line 25
+[24-Apr-2017 01:17:27 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/ubuntu/workspace/pages/OfficialDetail.php on line 148
+[24-Apr-2017 01:18:28 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/pages/OfficialDetail.php on line 155
+[24-Apr-2017 03:03:59 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/ubuntu/workspace/pages/login.php on line 54
+[24-Apr-2017 03:03:59 UTC] PHP Stack trace:
+[24-Apr-2017 03:03:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/pages/login.php:0
+[24-Apr-2017 03:04:21 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/ubuntu/workspace/pages/login.php on line 54
+[24-Apr-2017 03:04:21 UTC] PHP Stack trace:
+[24-Apr-2017 03:04:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/pages/login.php:0
+[24-Apr-2017 15:31:18 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/ubuntu/workspace/pages/login.php on line 32
+[24-Apr-2017 15:31:18 UTC] PHP Stack trace:
+[24-Apr-2017 15:31:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/pages/login.php:0
+[24-Apr-2017 15:31:18 UTC] PHP   2. printf() /home/ubuntu/workspace/pages/login.php:32

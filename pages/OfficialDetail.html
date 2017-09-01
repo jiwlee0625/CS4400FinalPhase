@@ -1,0 +1,139 @@
+<!-- Made by Vicky -->
+<!DOCTYPE html>
+<html lang = "en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title> City Official - POI detail </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        table, th, td {
+            border: 1px solid black
+        }
+        th, td {
+            padding: 15px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class = "container">
+    <h1 style = "text-align: center"> POI Detail </h1> <br>
+    <form method="post" class="form-horizontal" role="form" action="../php/OfficialDetail.php">
+        <!-- I'm assuming the php related to this html is called "OfficialDetail.php" -->
+
+        <div class="form group">
+            <label for="Datatype" class="col-sm-2 control-label"> <b> Data Type: </b> </label>
+
+            <div class= "col-sm-0">
+                <select id="dataType" class="form-control">
+                    <option> Mold Reading </option>
+                    <option> Air Quality </option>
+                </select>
+
+                <div class="col-sm-10 col-sm-offset-2"> </div> <br><br>
+            </div>
+        </div>
+
+        <div class="form group">
+            <label><b>
+                <p><b> <input type="number" min="0" step="1" name="dataValue" placeholder = "Enter the data value" Required> to <input type="number" min="0" step="1" name="dataValue" placeholder = "Enter the data value" Required> </b></p>
+            </b></label>
+        </div>
+
+        <div class="form group">
+            <label><b> Time & Date
+                <p><b> <input type = "datetime-local" name = "datetime"> to <input type = "datetime-local" name = "datetime"> </b></p>
+            </b></label>
+        </div>
+
+        <div id="container">
+            <button id="button1"> Apply Filter </button>
+            <!-- NEED TO DO SOMETHING -->
+            <button id="button2"> Reset Filter </button>
+            <!-- NEED TO DO SOMETHING -->
+        </div>
+
+
+        <hr>
+
+        <div class="form-group">
+            <table>
+                <tr id="tr1">
+                    <th> Data type </th>
+                    <th> Data value </th>
+                    <th> Time & Date of data Reading </th>
+                </tr>
+
+                <tr id="tr2">
+                    <th> Mold </th>
+                    <th> 12 </th>
+                    <th> 01/31/2017 15:32PM </th>
+                </tr>
+
+                <tr id="tr3">
+                    <th> Mold </th>
+                    <th> 20 </th>
+                    <th> 01/31/2017 15:39PM </th>
+                </tr>
+
+                <tr id="tr4">
+                    <th> Mold </th>
+                    <th> 22 </th>
+                    <th> 01/31/2017 16:57PM </th>
+                </tr>
+
+                <tr id="tr5">
+                    <th> Mold </th>
+                    <th> 16 </th>
+                    <th> 01/31/2017 18:32 </th>
+                </tr>
+
+                <tr id="tr6">
+                    <th> Mold </th>
+                    <th> 12 </th>
+                    <th> 01/31/2017 19:01 </th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+                <a href="OfficialPOI.php" class="btn btn-lg btn-success btn-block"> Back </a>
+            </div> <br>
+
+            <div class="col-sm-10 col-sm-offset-2">
+                <a href="....php" class="btn btn-lg btn-success btn-block"> Flag </a>
+            </div> <br>
+            <!-- I don't know what should when the flag button is pressed.-->
+        </div>
+    </form>
+    </div>
+</body>
+</html>
